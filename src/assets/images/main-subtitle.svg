@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="132" height="34" viewBox="0 0 132 34">
+    <defs>
+        <linearGradient id="yppj7eb2bb" x1="0%" x2="100%" y1="46.97%" y2="53.03%">
+            <stop offset="0%" stop-color="#7F5BFF"/>
+            <stop offset="100%" stop-color="#00E1FA"/>
+        </linearGradient>
+        <path id="ecg7aba1ma" d="M16 0h98c8.837 0 16 7.163 16 16s-7.163 16-16 16H16C7.163 32 0 24.837 0 16S7.163 0 16 0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+        <mask id="hjs7oi2q3c" fill="#fff">
+            <use xlink:href="#ecg7aba1ma"/>
+        </mask>
+        <use stroke="url(#yppj7eb2bb)" stroke-width="2" xlink:href="#ecg7aba1ma"/>
+        <text fill="#FFF" font-family="AppleSDGothicNeo-Bold, Apple SD Gothic Neo" font-size="14" font-weight="bold" mask="url(#hjs7oi2q3c)">
+            <tspan x="18.191" y="19.02">아만다 연애 타로</tspan>
+        </text>
+    </g>
+</svg>

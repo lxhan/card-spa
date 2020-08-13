@@ -1,0 +1,35 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@font-face {
+  font-family: "Jalnan";
+  src: url("../fonts/Jalnan.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Apple SD Gothic Neo";
+  src: url("../fonts/apple-sd-gothic-neo-regular.otf");
+}
+
+@font-face {
+  font-family: "Apple SD Gothic Neo Bold";
+  src: url("../fonts/Apple\ SD\ Gothic\ Neo\ Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NotoSansCJKkr";
+  src: url("../fonts/NotoSansCJKkr-Regular.otf");
+}
+@font-face {
+  font-family: "NotoSansCJKkr";
+  src: url("../fonts/NotoSansCJKkr-Bold.otf");
+  font-weight: bold;
+}
