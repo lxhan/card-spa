@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import qs from "qs";
 import { sha256 } from "js-sha256";
-import { useLocation, useHistory } from "react-router-dom";
+import { useLocation, useHistory, Link } from "react-router-dom";
+import { isIOS, isAndroid } from "react-device-detect";
 import Header from "../_common/Header";
 import Background from "../../assets/images/background-star.svg";
 import Button from "../_common/Button";
@@ -13,8 +14,19 @@ import Comment from "./Comment";
 const Result: React.FC = () => {
   const location = useLocation();
   const history = useHistory();
+
   if (!location?.search) {
     history.push("/");
+  }
+
+  let storeLink = "";
+  if (isIOS) {
+    storeLink =
+      "https://apps.apple.com/kr/app/%EC%95%84%EB%A7%8C%EB%8B%A4-%EC%95%84%EB%AC%B4%EB%82%98-%EB%A7%8C%EB%82%98%EC%A7%80-%EC%95%8A%EB%8A%94-%EB%8B%B9%EC%8B%A0%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%86%8C%EA%B0%9C%ED%8C%85/id906675357";
+  } else if (isAndroid) {
+    storeLink = "https://play.google.com/store/apps/details?id=com.dorsia.amanda&hl=ko";
+  } else {
+    storeLink = "http://amanda.co.kr/";
   }
 
   const query = (qs.parse(location.search, {
@@ -59,8 +71,12 @@ const Result: React.FC = () => {
             결과에 맞는 이성 만나러 가기
           </p>
         </div>
-        <Button title="타로 다시 보기" />
-        <Button title="아만다에서 타로 보기" outline={true} />
+        <Link to="/menu">
+          <Button title="타로 다시 보기" />
+        </Link>
+        <a href={storeLink} target="_blank" rel="noopener noreferrer">
+          <Button title="아만다에서 타로 보기" outline={true} />
+        </a>
         <Share />
         <Comment identifier={query?.card_id} />
       </div>

@@ -10,11 +10,13 @@ const Menu: React.FC = () => {
   const location = useLocation();
   const history = useHistory();
 
-  if (!location?.state) {
+  if (!location?.state && !localStorage.getItem("gender")) {
     history.push("/gender");
   }
 
-  const gender: number = (location.state as any)?.gender;
+  const gender: number =
+    (location.state as any)?.gender || Number.parseInt(localStorage.getItem("gender")!);
+  localStorage.setItem("gender", gender.toString());
 
   const [isList, setMenuState] = useState(false);
 

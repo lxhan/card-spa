@@ -2,6 +2,7 @@
   "name": "tarot",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:9090/api",
   "dependencies": {
     "@brainhubeu/react-carousel": "^1.19.26",
     "@types/node": "^12.0.0",
@@ -14,6 +15,7 @@
     "qs": "^6.9.4",
     "react": "^16.13.1",
     "react-animations": "^1.0.0",
+    "react-device-detect": "^1.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3",

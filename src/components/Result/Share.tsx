@@ -41,16 +41,12 @@ const Share: React.FC = () => {
         <Kakao />
         <Url className="cursor-pointer" onClick={copyToClipboard} />
       </div>
-      <h4 className="text-sm text-gray-500 font-apple mt-12 mb-8">
-        사이트 링크 공유하기
-      </h4>
+      <h4 className="text-sm text-gray-500 font-apple mt-12 mb-8">사이트 링크 공유하기</h4>
       <div
         onClick={copyToClipboard}
         className="flex flex-row items-center justify-between w-80 h-9 border border-gray-300 rounded-lg cursor-pointer"
       >
-        <span className="text-gray-500 text-sm ml-4">
-          http://tarot.amanda.co.kr
-        </span>
+        <span className="text-gray-500 text-sm ml-4">https://tarot.amanda.co.kr</span>
         <span className="text-white text-center bg-purple-600 h-full w-16 rounded-r-lg leading-9">
           복사
         </span>

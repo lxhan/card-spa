@@ -26,7 +26,6 @@ const Pick: React.FC<PickProps> = ({ data, gender }) => {
   };
 
   const rows = shuffleArray(genderData);
-  console.log(rows);
   const row1 = rows.slice(0, 4);
   const row2 = rows.slice(4, 9);
   const row3 = rows.slice(9, 13);
